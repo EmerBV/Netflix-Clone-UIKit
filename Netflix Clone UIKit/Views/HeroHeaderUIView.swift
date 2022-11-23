@@ -10,8 +10,10 @@ import UIKit
 class HeroHeaderUIView: UIView {
     
     private let downloadButton: UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.setTitle("Download", for: .normal)
+        button.tintColor = .label
+        button.backgroundColor = .systemGray
         button.layer.borderColor = UIColor.white.cgColor
         button.layer.borderWidth = 1
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -20,8 +22,10 @@ class HeroHeaderUIView: UIView {
     }()
     
     private let playButton: UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.setTitle("Play", for: .normal)
+        button.tintColor = .label
+        button.backgroundColor = .systemGray
         button.layer.borderColor = UIColor.white.cgColor
         button.layer.borderWidth = 1
         button.translatesAutoresizingMaskIntoConstraints = false
